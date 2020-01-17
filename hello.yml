@@ -1,0 +1,6 @@
+---
+- hosts: slaves
+  tasks:
+  - name: Install java
+    yum: name=java state=installed
+  become: yes
